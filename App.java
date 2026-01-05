@@ -9,7 +9,8 @@ public class App {
         try(IloCplex cplex = new IloCplex()) {
             
             List<IloRange> constraints = new ArrayList();
-            //variable
+            
+            //variable define
             IloNumVar x = cplex.numVar(0, Double.MAX_VALUE, "x"); // x lies between 0 - infinity
             IloNumVar y = cplex.numVar(0, Double.MAX_VALUE, "y"); // y lies between 0 - infinity
 
